@@ -10,3 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::any('/', function () {
+    dump(Converter::convert2to10('111'));
+});
