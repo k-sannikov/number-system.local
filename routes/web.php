@@ -10,7 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::any('/', function () {
-    dump(Converter::convert2to10('111'));
-});
+Route::get('/', 'ConverterController@index');
+Route::get('/about', 'ConverterController@about');
+Route::post('/', 'ConverterController@convert')->name('convert');
