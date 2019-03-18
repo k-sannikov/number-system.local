@@ -178,6 +178,7 @@ return [
          * Own Service Providers...
          */
         App\Providers\ConverterServiceProvider::class,
+        App\Providers\ValidationServiceProvider::class,
     ],
 
     /*
