@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Converter;
-use Illuminate\Http\Request;
+use App\Http\Requests\ConverterRequest;
 
 class ConverterController extends Controller
 {
@@ -30,11 +30,11 @@ class ConverterController extends Controller
     /**
      * Обработка данных
      *
-     * @param Request $request экзкмпляр текущего HTTP-запроса
+     * @param ConverterRequest $request экзкмпляр текущего HTTP-запроса
      *
      * @return View представление
      */
-    public function convert(Request $request)
+    public function convert(ConverterRequest $request)
     {
         $binaryNumber = $request->binaryNumber;
         $result = Converter::convert2to10($binaryNumber);

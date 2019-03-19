@@ -10,6 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', 'ConverterController@index');
-Route::get('/about', 'ConverterController@about');
+Route::get('/', 'ConverterController@index')->name('index');;
+Route::get('/about', 'ConverterController@about')->name('about');;
 Route::post('/', 'ConverterController@convert')->name('convert');
