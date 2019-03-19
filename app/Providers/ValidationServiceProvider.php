@@ -23,7 +23,7 @@ class ValidationServiceProvider extends ServiceProvider
             $binaryNumberArray = str_split($value);
 
             foreach ($binaryNumberArray as $binaryNumber) {
-                if ($binaryNumber != 0 || $binaryNumber != 0) {
+                if ($binaryNumber !== '0' && $binaryNumber !== '1') {
                     return false;
                 }
             }
