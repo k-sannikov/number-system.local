@@ -21,16 +21,14 @@ class ConverterTest extends TestCase
      */
     public function testConvert2to10($binaryNumber, $expected)
     {
-        $this->assertEquals(7, Converter::convert2to10('111'));
+        $this->assertEquals($expected, Converter::convert2to10($binaryNumber));
     }
 
     public function convert2to10Provider()
     {
         return [
             'положительное' => ['111', 7],
-            'отрицательное' => ['-111', -7],
             'ноль' => ['0', 0],
-            'дробное' => ['111,11', -7,75],
         ];
     }
 }
