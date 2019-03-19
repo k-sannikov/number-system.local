@@ -31,8 +31,8 @@ class ConverterRequest extends FormRequest
     public function messages()
     {
         return [
-            'binaryNumber.required' => 'Необходимо ввести двоичное',
-            'binaryNumber.numeric' => 'Двоичное число должно содержать только цифры 0 и 1',
+            'binaryNumber.required' => 'Необходимо ввести двоичное число',
+            'binaryNumber.binary_number' => 'Двоичное число должно содержать только цифры 0 и 1',
         ];
     }
 }
